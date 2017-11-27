@@ -9,7 +9,7 @@ namespace zad_1
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// Główny punkt wejścia dla aplikacji
         /// </summary>
         [STAThread]
         static void Main()

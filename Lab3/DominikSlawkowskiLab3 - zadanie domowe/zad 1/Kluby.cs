@@ -36,6 +36,12 @@ namespace zad_1
                JOIN OpisWrocławskichKlubów ON KlubyWrocławskie.IDOpisu = OpisWrocławskichKlubów.ID", sqlConnection);
             FillDataGridView(sqlDataAdapter, dataGridView);
         }
+        /// <summary>
+        /// Funkcja wyswietlajaca kluby w dataGridView w zależności od posiadajnej gotówki
+        /// </summary>
+        /// <param name="sqlConnection"></param>
+        /// <param name="dataGridView"></param>
+        /// <param name="ilość"></param>
         public static void FindPerPrice(SqlConnection sqlConnection, DataGridView dataGridView, string ilość)
         {
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($@"SELECT KlubyWrocławskie.ID AS ID, [Nazwa klubu] AS [Nazwa klubu], Położenie AS Położenie, Wstęp AS Wstęp, Opis AS Opis FROM KlubyWrocławskie
