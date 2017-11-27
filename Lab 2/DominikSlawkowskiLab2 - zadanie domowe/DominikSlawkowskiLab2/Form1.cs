@@ -12,6 +12,9 @@ namespace DominikSlawkowskiLab2
 {
     public partial class FormGame : Form
     {
+        /// <summary>
+        /// Wstępne zainicjowanie obiektów klasy Knight i Skeleton
+        /// </summary>
         Knight knight;
         Skeleton skeleton = new Skeleton();
 
@@ -91,7 +94,11 @@ namespace DominikSlawkowskiLab2
                 }
             }
         }
-
+        /// <summary>
+        /// Metoda wywolywana po kliknieciu w buttonStrongAttack, sprawadza ilosc zycia przeciwnika i zadaje mu obrazenia
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonStrongAttack_Click(object sender, EventArgs e)
         {
             if (skeleton.IsDead() == false)
@@ -106,7 +113,7 @@ namespace DominikSlawkowskiLab2
             }
         }
         /// <summary>
-        /// Timer wywoluje metode ktora zadaje obrazenia naszej postaci
+        /// Timer wywoluje metode klasy Enemy ktora zadaje obrazenia naszej postaci
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

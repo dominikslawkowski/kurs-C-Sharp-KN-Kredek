@@ -8,6 +8,9 @@ namespace DominikSlawkowskiLab2
 {
     class Mage: Player
     {
+        /// <summary>
+        /// Początkowa ilość zaklęć naszej postaci
+        /// </summary>
         protected int Scroll = 3;
 
         public Mage(string name)
@@ -15,6 +18,10 @@ namespace DominikSlawkowskiLab2
             Name = name;
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za wylosowanie wartości obrażeń zadanych przez maga i wywołanie metody klasy Enemy w celu zmniejszeniu jego zycia
+        /// </summary>
+        /// <param name="enemy"></param>
         void ThrowFireBall(Enemy enemy)
         {
             Mana -= 20;
@@ -24,6 +31,9 @@ namespace DominikSlawkowskiLab2
             enemy.TakeDamage(damage);
         }
 
+        /// <summary>
+        /// Metoda zmniejszająca ilość posiadanych zwojów po jego wykorzystaniu i zwiększająca nasze życie
+        /// </summary>
         void UseScroll()
         {
             if(Scroll > 0)
