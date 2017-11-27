@@ -9,7 +9,7 @@ namespace DominikSlawkowskiLab2
     abstract class Player
     {
         /// <summary>
-        /// Wartości startowe dla naszej postaci
+        /// Wartości startowe dla naszej postaci.
         /// </summary>
         protected int Health = 100;
         protected int Stamina = 100;
@@ -23,7 +23,7 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Metoda sprawdzająca aktualną wartość naszego zdrowia i zwracająca wartość true, gdy zginiemy
+        /// Metoda sprawdzająca aktualną wartość naszego zdrowia i zwracająca wartość true, gdy zginiemy.
         /// </summary>
         /// <returns></returns>
         public bool IsDead()
@@ -36,7 +36,7 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Metoda która, gdy jest to możliwe (wartość życia nie jest wieksza od 90) zwiekasza nasze zdrowie o 10
+        /// Metoda która, gdy jest to możliwe (wartość życia nie jest wieksza od 90) zwiekasza nasze zdrowie o 10.
         /// </summary>
         /// <returns></returns>
         public int TakeRest()
@@ -50,7 +50,7 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Metoda odpowiedzialna za zwiększenia naszych statystyk
+        /// Metoda odpowiedzialna za zwiększenia naszych statystyk.
         /// </summary>
         void LevelUp()
         {
@@ -60,7 +60,7 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Metoda odpowiedzialna za mniejszenia naszego życia, po otrzymaniu obrażeń
+        /// Metoda odpowiedzialna za mniejszenia naszego życia, po otrzymaniu obrażeń.
         /// </summary>
         /// <param name="damage"></param>
         public void TakeDamage(int damage)

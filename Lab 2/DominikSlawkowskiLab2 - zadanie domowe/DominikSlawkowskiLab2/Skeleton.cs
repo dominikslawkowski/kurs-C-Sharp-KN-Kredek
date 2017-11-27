@@ -12,7 +12,7 @@ namespace DominikSlawkowskiLab2
 
         /// <summary>
         /// Metoda wywołująca metodę klasy Player, w celu przesłania zadanych obrażeń i zmniejszenia wartości życia naszej postaci.
-        /// Metoda ta w dodatku zwraca zadana wartość obrażeń aby zmniejszyć wartość w progressBarPlayerHealth
+        /// Metoda ta w dodatku zwraca zadana wartość obrażeń aby zmniejszyć wartość w progressBarPlayerHealth.
         /// </summary>
         /// <param name="player"></param>
         /// <returns></returns>
@@ -24,7 +24,7 @@ namespace DominikSlawkowskiLab2
             return damage;
         }
         /// <summary>
-        /// Metoda sprawdzająca aktualną wartość zdrowia przeciwnika i zwracająca wartość true, gdy on zginie
+        /// Metoda sprawdzająca aktualną wartość zdrowia przeciwnika i zwracająca wartość true, gdy on zginie.
         /// </summary>
         /// <returns></returns>
         public bool IsDead()

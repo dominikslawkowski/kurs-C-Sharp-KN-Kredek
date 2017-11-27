@@ -14,9 +14,9 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Ta metoda zadaje mniejsze obrażenia ale zabiera mniej wytrzymałości naszego bohatera
+        /// Ta metoda zadaje mniejsze obrażenia ale zabiera mniej wytrzymałości naszego bohatera.
         /// Metoda losująca wartość zadanych obrażeń przez naszego bohatera, oraz wywołująca metodę klasy Enemy by zmniejszyć przeciwnikowi wartość jego zdrowia.
-        /// Metoda zwraca również wartość zadanych obrażeń w celu zmniejszenia wartości progressBarEnemyHealth
+        /// Metoda zwraca również wartość zadanych obrażeń w celu zmniejszenia wartości progressBarEnemyHealth.
         /// </summary>
         /// <param name="enemy"></param>
         /// <returns></returns>
@@ -30,9 +30,9 @@ namespace DominikSlawkowskiLab2
             return damage;
         }
         /// <summary>
-        /// Ta metoda zadaje większe obrażenia kosztem większej straty wytrzymałości naszego bohatera
+        /// Ta metoda zadaje większe obrażenia kosztem większej straty wytrzymałości naszego bohatera.
         /// Metoda losująca wartość zadanych obrażeń przez naszego bohatera, oraz wywołująca metodę klasy Enemy by zmniejszyć przeciwnikowi wartość jego zdrowia.
-        /// Metoda zwraca również wartość zadanych obrażeń w celu zmniejszenia wartości progressBarEnemyHealth
+        /// Metoda zwraca również wartość zadanych obrażeń w celu zmniejszenia wartości progressBarEnemyHealth.
         /// </summary>
         /// <param name="enemy"></param>
         /// <returns></returns>

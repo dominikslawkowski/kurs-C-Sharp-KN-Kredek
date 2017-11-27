@@ -13,7 +13,7 @@ namespace DominikSlawkowskiLab2
     public partial class FormGame : Form
     {
         /// <summary>
-        /// Wstępne zainicjowanie obiektów klasy Knight i Skeleton
+        /// Wstępne zainicjowanie obiektów klasy Knight i Skeleton.
         /// </summary>
         Knight knight;
         Skeleton skeleton = new Skeleton();
@@ -25,7 +25,7 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Metoda sluzaca do przelaczenia widoku ekranu, oraz wystartowania timerow
+        /// Metoda sluzaca do przelaczenia widoku ekranu, oraz wystartowania timerow.
         /// </summary>
         void ChangeView()
         {
@@ -54,7 +54,7 @@ namespace DominikSlawkowskiLab2
             timerCheckWhoIsDead.Start();
         }
         /// <summary>
-        /// Metoda wywolywana po zatwierdzeniu danych w pierwszym oknie
+        /// Metoda wywolywana po zatwierdzeniu danych w pierwszym oknie.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -77,7 +77,7 @@ namespace DominikSlawkowskiLab2
         }
 
         /// <summary>
-        /// Metoda wywolywana po kliknieciu w buttonAttack, sprawadza ilosc zycia przeciwnika i zadaje mu obrazenia
+        /// Metoda wywolywana po kliknieciu w buttonAttack, sprawadza ilosc zycia przeciwnika i zadaje mu obrazenia.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -95,7 +95,7 @@ namespace DominikSlawkowskiLab2
             }
         }
         /// <summary>
-        /// Metoda wywolywana po kliknieciu w buttonStrongAttack, sprawadza ilosc zycia przeciwnika i zadaje mu obrazenia
+        /// Metoda wywolywana po kliknieciu w buttonStrongAttack, sprawadza ilosc zycia przeciwnika i zadaje mu obrazenia.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -113,7 +113,7 @@ namespace DominikSlawkowskiLab2
             }
         }
         /// <summary>
-        /// Timer wywoluje metode klasy Enemy ktora zadaje obrazenia naszej postaci
+        /// Timer wywoluje metode klasy Enemy ktora zadaje obrazenia naszej postaci.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -131,7 +131,7 @@ namespace DominikSlawkowskiLab2
              }
         }
         /// <summary>
-        /// Metoda dzieki ktorej mozemy sie leczyc
+        /// Metoda dzieki ktorej mozemy sie leczyc.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -143,7 +143,7 @@ namespace DominikSlawkowskiLab2
         }
 
        /// <summary>
-       /// Timer sprawdzajacy czy ktoras z postaci nie umarla, aby w razie potrzeby zakonczyc gre
+       /// Timer sprawdzajacy czy ktoras z postaci nie umarla, aby w razie potrzeby zakonczyc gre.
        /// </summary>
        /// <param name="sender"></param>
        /// <param name="e"></param>
