@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace zad_1
@@ -31,7 +26,7 @@ namespace zad_1
         /// </summary>
         /// <param name="sqlConnection"></param>
         /// <param name="dataGridView"></param>
-        public static void PokażSamochody(SqlConnection sqlConnection, DataGridView dataGridView)
+        public static void ShowCars(SqlConnection sqlConnection, DataGridView dataGridView)
         {
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT Samochody.ID AS ID, Marka AS Marka, Rocznik AS Rocznik, Przebieg AS Przebieg, Kolor AS Kolor, Imię AS Imię, Nazwisko AS Nazwisko FROM Samochody
                JOIN Klienci ON Samochody.IDKlienta = Klienci.ID;", sqlConnection);
@@ -53,7 +48,7 @@ namespace zad_1
                 sqlCommand = new SqlCommand(command, sqlConnection);
                 sqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Dodano samochód");
-                PokażSamochody(sqlConnection, dataGridView);
+                ShowCars(sqlConnection, dataGridView);
                 sqlConnection.Close();
         }
         /// <summary>
@@ -70,7 +65,7 @@ namespace zad_1
             sqlCommand = new SqlCommand(command, sqlConnection);
             sqlCommand.ExecuteNonQuery();
             MessageBox.Show("Usunięto");
-            PokażSamochody(sqlConnection, dataGridView);
+            ShowCars(sqlConnection, dataGridView);
             sqlConnection.Close();
 
         }
@@ -86,13 +81,13 @@ namespace zad_1
         /// <param name="id"></param>
         public static void ChangeCar(SqlConnection sqlConnection, DataGridView dataGridView, string marka, string rocznik, string przebieg, string kolor, int ID, int IDKlienta)
         {
-            sqlConnection.Open();
-            string command = $"UPDATE Samochody SET Marka = '{marka}', Rocznik = '{rocznik}', Przebieg = '{przebieg}', Kolor = '{kolor}', IDKlienta = '{IDKlienta}' WHERE ID = '{ID}'";
-            sqlCommand = new SqlCommand(command, sqlConnection);
-            sqlCommand.ExecuteNonQuery();
-            MessageBox.Show("Zmieniono dane samochódu");
-            PokażSamochody(sqlConnection, dataGridView);
-            sqlConnection.Close();
+                sqlConnection.Open();
+                string command = $"UPDATE Samochody SET Marka = '{marka}', Rocznik = '{rocznik}', Przebieg = '{przebieg}', Kolor = '{kolor}', IDKlienta = '{IDKlienta}' WHERE ID = '{ID}'";
+                sqlCommand = new SqlCommand(command, sqlConnection);
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Zmieniono dane samochódu");
+                ShowCars(sqlConnection, dataGridView);
+                sqlConnection.Close();
         }
     }
 }

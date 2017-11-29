@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +26,7 @@ namespace zad_1
         /// <param name="e"></param>
         private void buttonShowCars_Click(object sender, EventArgs e)
         {
-            Samochody.PokażSamochody(sqlConnection, dataGridViewTable);
+            Samochody.ShowCars(sqlConnection, dataGridViewTable);
         }
         /// <summary>
         /// Przycisk wywołujący metode dodającą nowy samochód do bazy danych
@@ -53,7 +53,11 @@ namespace zad_1
         /// <param name="e"></param>
         private void buttonChangeCarClick(object sender, EventArgs e)
         {
-            Samochody.ChangeCar(sqlConnection, dataGridViewTable, textBoxMark.Text, textBoxAge.Text, textBoxMileage.Text, textBoxColor.Text, Int32.Parse(textBoxID.Text), Int32.Parse(textBoxIDKlient.Text));
+            if(textBoxMark.Text == "" || textBoxAge.Text == "" || textBoxMileage.Text == "" || textBoxColor.Text == "" || textBoxID.Text == "")
+            {
+                MessageBox.Show("Musisz podać wszystkie potrzebne dane!");
+            }
+            else Samochody.ChangeCar(sqlConnection, dataGridViewTable, textBoxMark.Text, textBoxAge.Text, textBoxMileage.Text, textBoxColor.Text, Int32.Parse(textBoxID.Text), Int32.Parse(textBoxIDKlient.Text));
         }
         /// <summary>
         /// Przycisk wywołujący metode pokazującą kluby w dataGridView

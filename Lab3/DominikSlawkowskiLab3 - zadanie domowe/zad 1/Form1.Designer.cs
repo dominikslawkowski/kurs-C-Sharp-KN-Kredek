@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.dataGridViewTable = new System.Windows.Forms.DataGridView();
-            this.buttonPokażSamochody = new System.Windows.Forms.Button();
+            this.buttonShowCars = new System.Windows.Forms.Button();
             this.textBoxMark = new System.Windows.Forms.TextBox();
             this.textBoxMileage = new System.Windows.Forms.TextBox();
             this.textBoxAge = new System.Windows.Forms.TextBox();
-            this.labelMarka = new System.Windows.Forms.Label();
-            this.labelPrzebieg = new System.Windows.Forms.Label();
-            this.labelRocznik = new System.Windows.Forms.Label();
-            this.labelKolor = new System.Windows.Forms.Label();
+            this.labelMark = new System.Windows.Forms.Label();
+            this.labelMileage = new System.Windows.Forms.Label();
+            this.labelAge = new System.Windows.Forms.Label();
+            this.labelColor = new System.Windows.Forms.Label();
             this.textBoxColor = new System.Windows.Forms.TextBox();
-            this.buttonDodaj = new System.Windows.Forms.Button();
-            this.buttonZmień = new System.Windows.Forms.Button();
-            this.buttonUsuń = new System.Windows.Forms.Button();
+            this.buttonAddCar = new System.Windows.Forms.Button();
+            this.buttonChangeCar = new System.Windows.Forms.Button();
+            this.buttonDeleteCar = new System.Windows.Forms.Button();
             this.panelID = new System.Windows.Forms.Panel();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
             this.panelTło = new System.Windows.Forms.Panel();
             this.textBoxIDKlient = new System.Windows.Forms.TextBox();
-            this.labelIDKlienta = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelIDKlient = new System.Windows.Forms.Label();
+            this.buttonFindPerPrise = new System.Windows.Forms.Button();
             this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.labelWyszkukiwanie = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonBiblioteka = new System.Windows.Forms.Button();
-            this.pictureBoxKluby = new System.Windows.Forms.PictureBox();
-            this.buttonPokażKluby = new System.Windows.Forms.Button();
+            this.labelFind = new System.Windows.Forms.Label();
+            this.pictureBoxLibrary = new System.Windows.Forms.PictureBox();
+            this.buttonLibrary = new System.Windows.Forms.Button();
+            this.pictureBoxClubs = new System.Windows.Forms.PictureBox();
+            this.buttonShowClubs = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable)).BeginInit();
             this.panelID.SuspendLayout();
             this.panelTło.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKluby)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibrary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClubs)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,137 +74,137 @@
             this.dataGridViewTable.Size = new System.Drawing.Size(733, 170);
             this.dataGridViewTable.TabIndex = 0;
             // 
-            // buttonPokażSamochody
+            // buttonShowCars
             // 
-            this.buttonPokażSamochody.Location = new System.Drawing.Point(21, 183);
-            this.buttonPokażSamochody.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonPokażSamochody.Name = "buttonPokażSamochody";
-            this.buttonPokażSamochody.Size = new System.Drawing.Size(144, 30);
-            this.buttonPokażSamochody.TabIndex = 16;
-            this.buttonPokażSamochody.Text = "Samochody";
-            this.buttonPokażSamochody.UseVisualStyleBackColor = true;
-            this.buttonPokażSamochody.Click += new System.EventHandler(this.buttonShowCars_Click);
+            this.buttonShowCars.Location = new System.Drawing.Point(21, 183);
+            this.buttonShowCars.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonShowCars.Name = "buttonShowCars";
+            this.buttonShowCars.Size = new System.Drawing.Size(144, 30);
+            this.buttonShowCars.TabIndex = 16;
+            this.buttonShowCars.Text = "Samochody";
+            this.buttonShowCars.UseVisualStyleBackColor = true;
+            this.buttonShowCars.Click += new System.EventHandler(this.buttonShowCars_Click);
             // 
-            // textBoxMarka
+            // textBoxMark
             // 
             this.textBoxMark.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxMark.Location = new System.Drawing.Point(69, 15);
             this.textBoxMark.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxMark.Name = "textBoxMarka";
+            this.textBoxMark.Name = "textBoxMark";
             this.textBoxMark.Size = new System.Drawing.Size(97, 20);
             this.textBoxMark.TabIndex = 17;
             // 
-            // textBoxPrzebieg
+            // textBoxMileage
             // 
             this.textBoxMileage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxMileage.Location = new System.Drawing.Point(69, 86);
             this.textBoxMileage.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxMileage.Name = "textBoxPrzebieg";
+            this.textBoxMileage.Name = "textBoxMileage";
             this.textBoxMileage.Size = new System.Drawing.Size(97, 20);
             this.textBoxMileage.TabIndex = 18;
             // 
-            // textBoxRocznik
+            // textBoxAge
             // 
             this.textBoxAge.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxAge.Location = new System.Drawing.Point(69, 49);
             this.textBoxAge.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxAge.Name = "textBoxRocznik";
+            this.textBoxAge.Name = "textBoxAge";
             this.textBoxAge.Size = new System.Drawing.Size(97, 20);
             this.textBoxAge.TabIndex = 19;
             // 
-            // labelMarka
+            // labelMark
             // 
-            this.labelMarka.AutoSize = true;
-            this.labelMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelMarka.Location = new System.Drawing.Point(13, 15);
-            this.labelMarka.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelMarka.Name = "labelMarka";
-            this.labelMarka.Size = new System.Drawing.Size(45, 15);
-            this.labelMarka.TabIndex = 20;
-            this.labelMarka.Text = "Marka:";
+            this.labelMark.AutoSize = true;
+            this.labelMark.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelMark.Location = new System.Drawing.Point(13, 15);
+            this.labelMark.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMark.Name = "labelMark";
+            this.labelMark.Size = new System.Drawing.Size(45, 15);
+            this.labelMark.TabIndex = 20;
+            this.labelMark.Text = "Marka:";
             // 
-            // labelPrzebieg
+            // labelMileage
             // 
-            this.labelPrzebieg.AutoSize = true;
-            this.labelPrzebieg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelPrzebieg.Location = new System.Drawing.Point(13, 86);
-            this.labelPrzebieg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelPrzebieg.Name = "labelPrzebieg";
-            this.labelPrzebieg.Size = new System.Drawing.Size(59, 15);
-            this.labelPrzebieg.TabIndex = 21;
-            this.labelPrzebieg.Text = "Przebieg:";
+            this.labelMileage.AutoSize = true;
+            this.labelMileage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelMileage.Location = new System.Drawing.Point(13, 86);
+            this.labelMileage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMileage.Name = "labelMileage";
+            this.labelMileage.Size = new System.Drawing.Size(59, 15);
+            this.labelMileage.TabIndex = 21;
+            this.labelMileage.Text = "Przebieg:";
             // 
-            // labelRocznik
+            // labelAge
             // 
-            this.labelRocznik.AutoSize = true;
-            this.labelRocznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelRocznik.Location = new System.Drawing.Point(13, 49);
-            this.labelRocznik.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelRocznik.Name = "labelRocznik";
-            this.labelRocznik.Size = new System.Drawing.Size(54, 15);
-            this.labelRocznik.TabIndex = 22;
-            this.labelRocznik.Text = "Rocznik:";
+            this.labelAge.AutoSize = true;
+            this.labelAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelAge.Location = new System.Drawing.Point(13, 49);
+            this.labelAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(54, 15);
+            this.labelAge.TabIndex = 22;
+            this.labelAge.Text = "Rocznik:";
             // 
-            // labelKolor
+            // labelColor
             // 
-            this.labelKolor.AutoSize = true;
-            this.labelKolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelKolor.Location = new System.Drawing.Point(13, 122);
-            this.labelKolor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelKolor.Name = "labelKolor";
-            this.labelKolor.Size = new System.Drawing.Size(39, 15);
-            this.labelKolor.TabIndex = 23;
-            this.labelKolor.Text = "Kolor:";
+            this.labelColor.AutoSize = true;
+            this.labelColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelColor.Location = new System.Drawing.Point(13, 122);
+            this.labelColor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelColor.Name = "labelColor";
+            this.labelColor.Size = new System.Drawing.Size(39, 15);
+            this.labelColor.TabIndex = 23;
+            this.labelColor.Text = "Kolor:";
             // 
-            // textBoxKolor
+            // textBoxColor
             // 
             this.textBoxColor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxColor.Location = new System.Drawing.Point(69, 120);
             this.textBoxColor.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxColor.Name = "textBoxKolor";
+            this.textBoxColor.Name = "textBoxColor";
             this.textBoxColor.Size = new System.Drawing.Size(97, 20);
             this.textBoxColor.TabIndex = 24;
             // 
-            // buttonDodaj
+            // buttonAddCar
             // 
-            this.buttonDodaj.Location = new System.Drawing.Point(189, 9);
-            this.buttonDodaj.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonDodaj.Name = "buttonDodaj";
-            this.buttonDodaj.Size = new System.Drawing.Size(81, 30);
-            this.buttonDodaj.TabIndex = 25;
-            this.buttonDodaj.Text = "Dodaj";
-            this.buttonDodaj.UseVisualStyleBackColor = true;
-            this.buttonDodaj.Click += new System.EventHandler(this.buttonAddCar_Click);
+            this.buttonAddCar.Location = new System.Drawing.Point(189, 9);
+            this.buttonAddCar.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddCar.Name = "buttonAddCar";
+            this.buttonAddCar.Size = new System.Drawing.Size(81, 30);
+            this.buttonAddCar.TabIndex = 25;
+            this.buttonAddCar.Text = "Dodaj";
+            this.buttonAddCar.UseVisualStyleBackColor = true;
+            this.buttonAddCar.Click += new System.EventHandler(this.buttonAddCar_Click);
             // 
-            // buttonZmień
+            // buttonChangeCar
             // 
-            this.buttonZmień.Location = new System.Drawing.Point(6, 49);
-            this.buttonZmień.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonZmień.Name = "buttonZmień";
-            this.buttonZmień.Size = new System.Drawing.Size(81, 30);
-            this.buttonZmień.TabIndex = 26;
-            this.buttonZmień.Text = "Zmień";
-            this.buttonZmień.UseVisualStyleBackColor = true;
-            this.buttonZmień.Click += new System.EventHandler(this.buttonChangeCarClick);
+            this.buttonChangeCar.Location = new System.Drawing.Point(6, 49);
+            this.buttonChangeCar.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonChangeCar.Name = "buttonChangeCar";
+            this.buttonChangeCar.Size = new System.Drawing.Size(81, 30);
+            this.buttonChangeCar.TabIndex = 26;
+            this.buttonChangeCar.Text = "Zmień";
+            this.buttonChangeCar.UseVisualStyleBackColor = true;
+            this.buttonChangeCar.Click += new System.EventHandler(this.buttonChangeCarClick);
             // 
-            // buttonUsuń
+            // buttonDeleteCar
             // 
-            this.buttonUsuń.Location = new System.Drawing.Point(6, 8);
-            this.buttonUsuń.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonUsuń.Name = "buttonUsuń";
-            this.buttonUsuń.Size = new System.Drawing.Size(81, 30);
-            this.buttonUsuń.TabIndex = 27;
-            this.buttonUsuń.Text = "Usuń";
-            this.buttonUsuń.UseVisualStyleBackColor = true;
-            this.buttonUsuń.Click += new System.EventHandler(this.buttonDeleteCar_Click);
+            this.buttonDeleteCar.Location = new System.Drawing.Point(6, 8);
+            this.buttonDeleteCar.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDeleteCar.Name = "buttonDeleteCar";
+            this.buttonDeleteCar.Size = new System.Drawing.Size(81, 30);
+            this.buttonDeleteCar.TabIndex = 27;
+            this.buttonDeleteCar.Text = "Usuń";
+            this.buttonDeleteCar.UseVisualStyleBackColor = true;
+            this.buttonDeleteCar.Click += new System.EventHandler(this.buttonDeleteCar_Click);
             // 
             // panelID
             // 
             this.panelID.BackColor = System.Drawing.Color.DarkGray;
             this.panelID.Controls.Add(this.textBoxID);
             this.panelID.Controls.Add(this.labelID);
-            this.panelID.Controls.Add(this.buttonUsuń);
-            this.panelID.Controls.Add(this.buttonZmień);
+            this.panelID.Controls.Add(this.buttonDeleteCar);
+            this.panelID.Controls.Add(this.buttonChangeCar);
             this.panelID.Location = new System.Drawing.Point(183, 49);
             this.panelID.Margin = new System.Windows.Forms.Padding(2);
             this.panelID.Name = "panelID";
@@ -234,125 +234,125 @@
             // 
             this.panelTło.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelTło.Controls.Add(this.textBoxIDKlient);
-            this.panelTło.Controls.Add(this.labelIDKlienta);
-            this.panelTło.Controls.Add(this.button1);
+            this.panelTło.Controls.Add(this.labelIDKlient);
+            this.panelTło.Controls.Add(this.buttonFindPerPrise);
             this.panelTło.Controls.Add(this.textBoxPrice);
-            this.panelTło.Controls.Add(this.labelWyszkukiwanie);
-            this.panelTło.Controls.Add(this.pictureBox1);
-            this.panelTło.Controls.Add(this.buttonBiblioteka);
-            this.panelTło.Controls.Add(this.pictureBoxKluby);
-            this.panelTło.Controls.Add(this.buttonPokażKluby);
+            this.panelTło.Controls.Add(this.labelFind);
+            this.panelTło.Controls.Add(this.pictureBoxLibrary);
+            this.panelTło.Controls.Add(this.buttonLibrary);
+            this.panelTło.Controls.Add(this.pictureBoxClubs);
+            this.panelTło.Controls.Add(this.buttonShowClubs);
             this.panelTło.Controls.Add(this.textBoxColor);
             this.panelTło.Controls.Add(this.panelID);
-            this.panelTło.Controls.Add(this.buttonPokażSamochody);
-            this.panelTło.Controls.Add(this.buttonDodaj);
+            this.panelTło.Controls.Add(this.buttonShowCars);
+            this.panelTło.Controls.Add(this.buttonAddCar);
             this.panelTło.Controls.Add(this.textBoxMark);
             this.panelTło.Controls.Add(this.textBoxMileage);
-            this.panelTło.Controls.Add(this.labelKolor);
+            this.panelTło.Controls.Add(this.labelColor);
             this.panelTło.Controls.Add(this.textBoxAge);
-            this.panelTło.Controls.Add(this.labelRocznik);
-            this.panelTło.Controls.Add(this.labelMarka);
-            this.panelTło.Controls.Add(this.labelPrzebieg);
+            this.panelTło.Controls.Add(this.labelAge);
+            this.panelTło.Controls.Add(this.labelMark);
+            this.panelTło.Controls.Add(this.labelMileage);
             this.panelTło.Location = new System.Drawing.Point(9, 190);
             this.panelTło.Margin = new System.Windows.Forms.Padding(2);
             this.panelTło.Name = "panelTło";
             this.panelTło.Size = new System.Drawing.Size(733, 244);
             this.panelTło.TabIndex = 29;
             // 
-            // textBoxIDKlienta
+            // textBoxIDKlient
             // 
             this.textBoxIDKlient.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxIDKlient.Location = new System.Drawing.Point(101, 152);
             this.textBoxIDKlient.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxIDKlient.Name = "textBoxIDKlienta";
+            this.textBoxIDKlient.Name = "textBoxIDKlient";
             this.textBoxIDKlient.Size = new System.Drawing.Size(33, 20);
             this.textBoxIDKlient.TabIndex = 37;
             // 
-            // labelIDKlienta
+            // labelIDKlient
             // 
-            this.labelIDKlienta.AutoSize = true;
-            this.labelIDKlienta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelIDKlienta.Location = new System.Drawing.Point(13, 153);
-            this.labelIDKlienta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelIDKlienta.Name = "labelIDKlienta";
-            this.labelIDKlienta.Size = new System.Drawing.Size(66, 15);
-            this.labelIDKlienta.TabIndex = 36;
-            this.labelIDKlienta.Text = "ID Klienta: ";
+            this.labelIDKlient.AutoSize = true;
+            this.labelIDKlient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelIDKlient.Location = new System.Drawing.Point(13, 153);
+            this.labelIDKlient.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelIDKlient.Name = "labelIDKlient";
+            this.labelIDKlient.Size = new System.Drawing.Size(66, 15);
+            this.labelIDKlient.TabIndex = 36;
+            this.labelIDKlient.Text = "ID Klienta: ";
             // 
-            // button1
+            // buttonFindPerPrise
             // 
-            this.button1.Location = new System.Drawing.Point(627, 142);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 26);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Wyszukaj klub";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonFindPerPrice_Click);
+            this.buttonFindPerPrise.Location = new System.Drawing.Point(627, 142);
+            this.buttonFindPerPrise.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonFindPerPrise.Name = "buttonFindPerPrise";
+            this.buttonFindPerPrise.Size = new System.Drawing.Size(81, 26);
+            this.buttonFindPerPrise.TabIndex = 35;
+            this.buttonFindPerPrise.Text = "Wyszukaj klub";
+            this.buttonFindPerPrise.UseVisualStyleBackColor = true;
+            this.buttonFindPerPrise.Click += new System.EventHandler(this.buttonFindPerPrice_Click);
             // 
-            // textBoxGwiazdki
+            // textBoxPrice
             // 
             this.textBoxPrice.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBoxPrice.Location = new System.Drawing.Point(627, 107);
             this.textBoxPrice.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxPrice.Name = "textBoxGwiazdki";
+            this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(82, 20);
             this.textBoxPrice.TabIndex = 30;
             // 
-            // labelWyszkukiwanie
+            // labelFind
             // 
-            this.labelWyszkukiwanie.AutoSize = true;
-            this.labelWyszkukiwanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelWyszkukiwanie.Location = new System.Drawing.Point(627, 68);
-            this.labelWyszkukiwanie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelWyszkukiwanie.Name = "labelWyszkukiwanie";
-            this.labelWyszkukiwanie.Size = new System.Drawing.Size(94, 30);
-            this.labelWyszkukiwanie.TabIndex = 34;
-            this.labelWyszkukiwanie.Text = "Ile masz hajsu\r\nna dziś wieczór:";
+            this.labelFind.AutoSize = true;
+            this.labelFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelFind.Location = new System.Drawing.Point(627, 68);
+            this.labelFind.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelFind.Name = "labelFind";
+            this.labelFind.Size = new System.Drawing.Size(108, 30);
+            this.labelFind.TabIndex = 34;
+            this.labelFind.Text = "Ile masz pieniędzy\r\nna dziś wieczór:";
             // 
-            // pictureBox1
+            // pictureBoxLibrary
             // 
-            this.pictureBox1.Image = global::zad_1.Properties.Resources.SAxktoARGh0dHA6Ly9vY2RuLmV1L25ld3N3ZWVrLXdlYi8wNjY5NDA3ZS1hMjJlLTQ3YWEtOTJmMi02NGJkOWE2NDMxYmUuanBnkZUCAM0CWMLD;
-            this.pictureBox1.Location = new System.Drawing.Point(451, 29);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLibrary.Image = global::zad_1.Properties.Resources.SAxktoARGh0dHA6Ly9vY2RuLmV1L25ld3N3ZWVrLXdlYi8wNjY5NDA3ZS1hMjJlLTQ3YWEtOTJmMi02NGJkOWE2NDMxYmUuanBnkZUCAM0CWMLD;
+            this.pictureBoxLibrary.Location = new System.Drawing.Point(451, 29);
+            this.pictureBoxLibrary.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxLibrary.Name = "pictureBoxLibrary";
+            this.pictureBoxLibrary.Size = new System.Drawing.Size(144, 104);
+            this.pictureBoxLibrary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLibrary.TabIndex = 32;
+            this.pictureBoxLibrary.TabStop = false;
             // 
-            // buttonBiblioteka
+            // buttonLibrary
             // 
-            this.buttonBiblioteka.Location = new System.Drawing.Point(451, 142);
-            this.buttonBiblioteka.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonBiblioteka.Name = "buttonBiblioteka";
-            this.buttonBiblioteka.Size = new System.Drawing.Size(144, 30);
-            this.buttonBiblioteka.TabIndex = 31;
-            this.buttonBiblioteka.Text = "Szkolna biblioteka";
-            this.buttonBiblioteka.UseVisualStyleBackColor = true;
-            this.buttonBiblioteka.Click += new System.EventHandler(this.buttonShowLibrary_Click);
+            this.buttonLibrary.Location = new System.Drawing.Point(451, 142);
+            this.buttonLibrary.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonLibrary.Name = "buttonLibrary";
+            this.buttonLibrary.Size = new System.Drawing.Size(144, 30);
+            this.buttonLibrary.TabIndex = 31;
+            this.buttonLibrary.Text = "Szkolna biblioteka";
+            this.buttonLibrary.UseVisualStyleBackColor = true;
+            this.buttonLibrary.Click += new System.EventHandler(this.buttonShowLibrary_Click);
             // 
-            // pictureBoxKluby
+            // pictureBoxClubs
             // 
-            this.pictureBoxKluby.Image = global::zad_1.Properties.Resources.weekly_forecast1;
-            this.pictureBoxKluby.Location = new System.Drawing.Point(288, 34);
-            this.pictureBoxKluby.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxKluby.Name = "pictureBoxKluby";
-            this.pictureBoxKluby.Size = new System.Drawing.Size(153, 96);
-            this.pictureBoxKluby.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxKluby.TabIndex = 30;
-            this.pictureBoxKluby.TabStop = false;
+            this.pictureBoxClubs.Image = global::zad_1.Properties.Resources.weekly_forecast1;
+            this.pictureBoxClubs.Location = new System.Drawing.Point(288, 34);
+            this.pictureBoxClubs.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxClubs.Name = "pictureBoxClubs";
+            this.pictureBoxClubs.Size = new System.Drawing.Size(153, 96);
+            this.pictureBoxClubs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxClubs.TabIndex = 30;
+            this.pictureBoxClubs.TabStop = false;
             // 
-            // buttonPokażKluby
+            // buttonShowClubs
             // 
-            this.buttonPokażKluby.Location = new System.Drawing.Point(293, 142);
-            this.buttonPokażKluby.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonPokażKluby.Name = "buttonPokażKluby";
-            this.buttonPokażKluby.Size = new System.Drawing.Size(144, 30);
-            this.buttonPokażKluby.TabIndex = 29;
-            this.buttonPokażKluby.Text = "Wrocławskie kluby";
-            this.buttonPokażKluby.UseVisualStyleBackColor = true;
-            this.buttonPokażKluby.Click += new System.EventHandler(this.buttonShowClubs_Click);
+            this.buttonShowClubs.Location = new System.Drawing.Point(293, 142);
+            this.buttonShowClubs.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonShowClubs.Name = "buttonShowClubs";
+            this.buttonShowClubs.Size = new System.Drawing.Size(144, 30);
+            this.buttonShowClubs.TabIndex = 29;
+            this.buttonShowClubs.Text = "Wrocławskie kluby";
+            this.buttonShowClubs.UseVisualStyleBackColor = true;
+            this.buttonShowClubs.Click += new System.EventHandler(this.buttonShowClubs_Click);
             // 
             // panel1
             // 
@@ -379,8 +379,8 @@
             this.panelID.PerformLayout();
             this.panelTło.ResumeLayout(false);
             this.panelTło.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKluby)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibrary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClubs)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -389,32 +389,32 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewTable;
-        private System.Windows.Forms.Button buttonPokażSamochody;
+        private System.Windows.Forms.Button buttonShowCars;
         private System.Windows.Forms.TextBox textBoxMark;
         private System.Windows.Forms.TextBox textBoxMileage;
         private System.Windows.Forms.TextBox textBoxAge;
-        private System.Windows.Forms.Label labelMarka;
-        private System.Windows.Forms.Label labelPrzebieg;
-        private System.Windows.Forms.Label labelRocznik;
-        private System.Windows.Forms.Label labelKolor;
+        private System.Windows.Forms.Label labelMark;
+        private System.Windows.Forms.Label labelMileage;
+        private System.Windows.Forms.Label labelAge;
+        private System.Windows.Forms.Label labelColor;
         private System.Windows.Forms.TextBox textBoxColor;
-        private System.Windows.Forms.Button buttonDodaj;
-        private System.Windows.Forms.Button buttonZmień;
-        private System.Windows.Forms.Button buttonUsuń;
+        private System.Windows.Forms.Button buttonAddCar;
+        private System.Windows.Forms.Button buttonChangeCar;
+        private System.Windows.Forms.Button buttonDeleteCar;
         private System.Windows.Forms.Panel panelID;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.Panel panelTło;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button buttonPokażKluby;
-        private System.Windows.Forms.PictureBox pictureBoxKluby;
-        private System.Windows.Forms.Button buttonBiblioteka;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonShowClubs;
+        private System.Windows.Forms.PictureBox pictureBoxClubs;
+        private System.Windows.Forms.Button buttonLibrary;
+        private System.Windows.Forms.PictureBox pictureBoxLibrary;
+        private System.Windows.Forms.Button buttonFindPerPrise;
         private System.Windows.Forms.TextBox textBoxPrice;
-        private System.Windows.Forms.Label labelWyszkukiwanie;
+        private System.Windows.Forms.Label labelFind;
         private System.Windows.Forms.TextBox textBoxIDKlient;
-        private System.Windows.Forms.Label labelIDKlienta;
+        private System.Windows.Forms.Label labelIDKlient;
     }
 }
 

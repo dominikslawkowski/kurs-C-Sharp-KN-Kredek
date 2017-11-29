@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace zad_1
 {
     class Biblioteka
     {
-        private static SqlCommand sqlCommand;
 
         /// <summary>
         /// Wyświetlanie tabeli
@@ -32,9 +26,10 @@ namespace zad_1
         /// <param name="dataGridView"></param>
         public static void ShowLibrary(SqlConnection sqlConnection, DataGridView dataGridView)
         {
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT Biblioteka.ID AS ID, Nazwa AS Nazwa, Autor AS Autor, IDUcznia AS IDUcznia FROM Biblioteka
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT Biblioteka.ID AS ID, Nazwa AS Nazwa, Autor AS Autor, Imię AS Imię, Nazwisko AS Nazwisko, Klasa AS Klasa FROM Biblioteka
                JOIN Uczniowie ON Biblioteka.IDUcznia = Uczniowie.ID;", sqlConnection);
             FillDataGridView(sqlDataAdapter, dataGridView);
         }
     }
 }
+

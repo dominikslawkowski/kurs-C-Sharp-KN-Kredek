@@ -1,9 +1,0 @@
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\bin\Debug\DominikSlawkowskiLab3.exe.config
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\bin\Debug\DominikSlawkowskiLab3.exe
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\bin\Debug\DominikSlawkowskiLab3.pdb
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\obj\Debug\DominikSlawkowskiLab3.csprojResolveAssemblyReference.cache
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\obj\Debug\DominikSlawkowskiLab3.Form1.resources
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\obj\Debug\DominikSlawkowskiLab3.Properties.Resources.resources
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\obj\Debug\DominikSlawkowskiLab3.csproj.GenerateResource.Cache
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\obj\Debug\DominikSlawkowskiLab3.exe
-C:\Users\domin\Desktop\C#\3 semestr\cpc2017-2\Dominik Slawkowski\Lab 3\DominikSlawkowskiLab3 - zadanie z zajęć\DominikSlawkowskiLab3\obj\Debug\DominikSlawkowskiLab3.pdb
