@@ -86,5 +86,22 @@ namespace zad_1
         {
             Kluby.FindPerPrice(sqlConnection, dataGridViewTable, textBoxPrice.Text);
         }
+
+        /// <summary>
+        /// Przycisk wywolujacy odpowiedznia metode w zaleznosci od zadanej wartosci ID
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonShowGrades_Click(object sender, EventArgs e)
+        {
+            if (textBoxStudentID.Text == "") { MessageBox.Show("Musisz podac ID ucznia!"); }
+            else
+            {
+               if(textBoxStudentID.Text == "1") Uczniowie.ShowGrades1(sqlConnection, dataGridViewTable);
+               else if (textBoxStudentID.Text == "2") Uczniowie.ShowGrades2(sqlConnection, dataGridViewTable);
+               else if (textBoxStudentID.Text == "3") Uczniowie.ShowGrades3(sqlConnection, dataGridViewTable);
+               else MessageBox.Show("Nie ma ucznia z podanym ID");
+            }
+        }
     }
 }

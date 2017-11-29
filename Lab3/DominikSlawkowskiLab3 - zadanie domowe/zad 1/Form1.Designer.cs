@@ -55,12 +55,18 @@
             this.pictureBoxClubs = new System.Windows.Forms.PictureBox();
             this.buttonShowClubs = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelStudents = new System.Windows.Forms.Panel();
+            this.buttonShowGrades = new System.Windows.Forms.Button();
+            this.labelStudentsID = new System.Windows.Forms.Label();
+            this.textBoxStudentID = new System.Windows.Forms.TextBox();
+            this.buttonShowNote = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable)).BeginInit();
             this.panelID.SuspendLayout();
             this.panelTło.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibrary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClubs)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelStudents.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewTable
@@ -233,6 +239,7 @@
             // panelTło
             // 
             this.panelTło.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelTło.Controls.Add(this.panelStudents);
             this.panelTło.Controls.Add(this.textBoxIDKlient);
             this.panelTło.Controls.Add(this.labelIDKlient);
             this.panelTło.Controls.Add(this.buttonFindPerPrise);
@@ -256,7 +263,7 @@
             this.panelTło.Location = new System.Drawing.Point(9, 190);
             this.panelTło.Margin = new System.Windows.Forms.Padding(2);
             this.panelTło.Name = "panelTło";
-            this.panelTło.Size = new System.Drawing.Size(733, 244);
+            this.panelTło.Size = new System.Drawing.Size(733, 317);
             this.panelTło.TabIndex = 29;
             // 
             // textBoxIDKlient
@@ -362,14 +369,66 @@
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(751, 445);
+            this.panel1.Size = new System.Drawing.Size(751, 523);
             this.panel1.TabIndex = 30;
+            // 
+            // panelStudents
+            // 
+            this.panelStudents.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panelStudents.Controls.Add(this.buttonShowNote);
+            this.panelStudents.Controls.Add(this.textBoxStudentID);
+            this.panelStudents.Controls.Add(this.labelStudentsID);
+            this.panelStudents.Controls.Add(this.buttonShowGrades);
+            this.panelStudents.Location = new System.Drawing.Point(319, 195);
+            this.panelStudents.Name = "panelStudents";
+            this.panelStudents.Size = new System.Drawing.Size(240, 100);
+            this.panelStudents.TabIndex = 30;
+            // 
+            // buttonShowGrades
+            // 
+            this.buttonShowGrades.Location = new System.Drawing.Point(19, 55);
+            this.buttonShowGrades.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonShowGrades.Name = "buttonShowGrades";
+            this.buttonShowGrades.Size = new System.Drawing.Size(82, 30);
+            this.buttonShowGrades.TabIndex = 38;
+            this.buttonShowGrades.Text = "Oceny";
+            this.buttonShowGrades.UseVisualStyleBackColor = true;
+            this.buttonShowGrades.Click += new System.EventHandler(this.buttonShowGrades_Click);
+            // 
+            // labelStudentsID
+            // 
+            this.labelStudentsID.AutoSize = true;
+            this.labelStudentsID.Location = new System.Drawing.Point(16, 15);
+            this.labelStudentsID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStudentsID.Name = "labelStudentsID";
+            this.labelStudentsID.Size = new System.Drawing.Size(85, 13);
+            this.labelStudentsID.TabIndex = 39;
+            this.labelStudentsID.Text = "Podaj ID ucznia:";
+            // 
+            // textBoxStudentID
+            // 
+            this.textBoxStudentID.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBoxStudentID.Location = new System.Drawing.Point(121, 12);
+            this.textBoxStudentID.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxStudentID.Name = "textBoxStudentID";
+            this.textBoxStudentID.Size = new System.Drawing.Size(97, 20);
+            this.textBoxStudentID.TabIndex = 38;
+            // 
+            // buttonShowNote
+            // 
+            this.buttonShowNote.Location = new System.Drawing.Point(132, 55);
+            this.buttonShowNote.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonShowNote.Name = "buttonShowNote";
+            this.buttonShowNote.Size = new System.Drawing.Size(82, 30);
+            this.buttonShowNote.TabIndex = 40;
+            this.buttonShowNote.Text = "Uwagi";
+            this.buttonShowNote.UseVisualStyleBackColor = true;
             // 
             // FormMyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 446);
+            this.ClientSize = new System.Drawing.Size(753, 519);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMyForm";
@@ -382,6 +441,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLibrary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClubs)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panelStudents.ResumeLayout(false);
+            this.panelStudents.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,6 +476,11 @@
         private System.Windows.Forms.Label labelFind;
         private System.Windows.Forms.TextBox textBoxIDKlient;
         private System.Windows.Forms.Label labelIDKlient;
+        private System.Windows.Forms.Panel panelStudents;
+        private System.Windows.Forms.Button buttonShowNote;
+        private System.Windows.Forms.TextBox textBoxStudentID;
+        private System.Windows.Forms.Label labelStudentsID;
+        private System.Windows.Forms.Button buttonShowGrades;
     }
 }
 
