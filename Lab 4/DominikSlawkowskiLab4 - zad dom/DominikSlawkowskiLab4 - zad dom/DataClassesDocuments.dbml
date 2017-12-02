@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Wypożyczalnia_samochodów" Class="DataClassesDocumentsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-F26UD2M\SQLEXPRESS;Initial Catalog=Wypożyczalnia_samochodów;Integrated Security=True" SettingsObjectName="DominikSlawkowskiLab4___zad_dom.Properties.Settings" SettingsPropertyName="Wypożyczalnia_samochodówConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[Oceny ucznia 1]" Member="Oceny_ucznia_1s">
+    <Type Name="Oceny_ucznia_1">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Matematyka" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Język polski]" Member="Język_polski" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Przyroda" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Uczniowie_Oceny_ucznia_1" Member="Uczniowie" ThisKey="ID" OtherKey="ID" Type="Uczniowie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Oceny ucznia 2]" Member="Oceny_ucznia_2s">
+    <Type Name="Oceny_ucznia_2">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Matematyka" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Język polski]" Member="Język_polski" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Przyroda" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Uczniowie_Oceny_ucznia_2" Member="Uczniowie" ThisKey="ID" OtherKey="ID" Type="Uczniowie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Oceny ucznia 3]" Member="Oceny_ucznia_3s">
+    <Type Name="Oceny_ucznia_3">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Matematyka" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Język polski]" Member="Język_polski" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Przyroda" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Uczniowie_Oceny_ucznia_3" Member="Uczniowie" ThisKey="ID" OtherKey="ID" Type="Uczniowie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Uczniowie" Member="Uczniowies">
+    <Type Name="Uczniowie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Imię" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Nazwisko" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Klasa" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Uczniowie_Oceny_ucznia_1" Member="Oceny_ucznia_1s" ThisKey="ID" OtherKey="ID" Type="Oceny_ucznia_1" />
+      <Association Name="Uczniowie_Oceny_ucznia_2" Member="Oceny_ucznia_2s" ThisKey="ID" OtherKey="ID" Type="Oceny_ucznia_2" />
+      <Association Name="Uczniowie_Oceny_ucznia_3" Member="Oceny_ucznia_3s" ThisKey="ID" OtherKey="ID" Type="Oceny_ucznia_3" />
+      <Association Name="Uczniowie_Uwagi_uczniów" Member="Uwagi_uczniów" ThisKey="ID" OtherKey="ID" Type="Uwagi_uczniów" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Uwagi uczniów]" Member="Uwagi_ucznióws">
+    <Type Name="Uwagi_uczniów">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Uwagi" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Uczniowie_Uwagi_uczniów" Member="Uczniowie" ThisKey="ID" OtherKey="ID" Type="Uczniowie" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
