@@ -1,4 +1,105 @@
 ﻿
+const API_LINK = 'http://localhost:56191/api';
+var currentStudent;
+
+function renderMenuLeft(items) {
+    var ul = document.querySelector('#left-menu ul');
+
+    for (var i = 0; i < items.length; i++) {
+        // Preparation for each <li> 
+        var li = document.createElement('li');
+        li.id = items[i].Id;
+        li.className = 'list-group-item';
+        li.textContent = items[i].FirstName
+
+        // Bind click event to li element
+        li.onclick = function () {
+            var liPreviousActive = document.getElementsByClassName('active');
+            if (liPreviousActive.length > 0) {
+                liPreviousActive[0].className = 'list-group-item';
+            }
+            this.className = 'list-group-item active';
+            var hardwareIndex = document.getElementById(this.id);
+            var foundHardware = items.find(function (hardware) {
+                return hardware.Id == hardwareIndex.id;
+            });
+            renderDetail(foundHardware);
+        };
+
+        // Li finally created is rendering in HTML
+        ul.appendChild(li);
+    }
+
+}
+
+function renderDetail(item) {
+    document.querySelector('.card-title').textContent = item.FirstName;
+    var ul = document.querySelector('#detail ul');
+    var ulTextContent = '';
+    // For each key-value pair in object create new li
+    for (var key in item) {
+        ulTextContent += '<li>' + key + ': ' + item[key] + '</li>';
+    }
+    //Replace old values with new properties
+    ul.innerHTML = ulTextContent;
+    currentStudent = item;
+}
+
+$(document).ready(function () {
+    console.log('Hello! Your document is ready');
+
+    var students = [
+        { FirstName: 'John', LastName: 'Smith', City: 'London', Id: 10 },
+        { FirstName: 'Anne', LastName: 'Smith', City: 'Wrocław', Id: 13 },
+    ];
+
+    $('.dropdown-item').click(function (event) {
+        $('input[name="city"]').val(event.target.textContent);
+    })
+    // Asynchronous Javascript for obtaining list of students    
+    var request = $.ajax({
+        url: API_LINK + '/students',
+        method: "GET",
+        dataType: "json"
+    });
+
+    //When server responds:
+    request.done(function (response) {
+        students = response;
+        renderMenuLeft(students);
+        renderDetail(students[1]);
+        //remove spinner when request done
+        $('.loading').removeClass('loader');
+
+    });
+    $('#saveButton').click(function () {
+        $('#modal').modal('close');
+        // Creating new student collecting values from form
+        var newStudent = {
+            FirstName: $('input[name = "firstname"]').val(),
+            LastName: $('input[name = "lastname"]').val(),
+            City: $('input[name = "city"]').val()
+        };
+
+        var requestPOST = $.ajax({
+            url: API_LINK + '/students',
+            method: "POST",
+            dataType: "json",
+            data: newStudent,
+        });
+
+        //When server responds:
+        requestPOST.done(function (response) {
+            students.push(response);
+            renderMenuLeft(students);
+        });
+    });
+
+});
+
+
+
+
 var preloaderEl = document.querySelector('.preloader');
 setTimeout(function () {
 

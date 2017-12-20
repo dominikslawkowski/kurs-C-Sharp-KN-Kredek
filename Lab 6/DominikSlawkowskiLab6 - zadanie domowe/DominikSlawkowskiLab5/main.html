@@ -1,0 +1,212 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+		<meta charset = "utf-8"/>
+		<title> 					</title>
+		<meta name="description" content="		"/>
+		<meta name="keywords" content="		"/>
+		<meta http-equive="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+        <link rel="stylesheet" type="text/css" href="styles/css/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+		
+
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="logo">
+			<ul>
+				<li>D</li>
+				<li>O</li>
+				<li>M</li>
+				<li>I</li>
+				<li>N</li>
+				<li>O</li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li>B</li>
+				<li>L</li>
+				<li>O</li>
+				<li>G</li>
+			</ul>
+		</div>
+		
+		<div class="description">
+			<ul>
+				<li>t</li>
+				<li>e</li>
+				<li>c</li>
+				<li>h</li>
+				<li>n</li>
+				<li>o</li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li>&</li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li>w</li>
+				<li>e</li>
+				<li>b</li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+				<li>d</li>
+				<li>e</li>
+				<li>s</li>
+				<li>i</li>
+				<li>g</li>
+				<li>n</li>
+			</ul>
+		</div>
+	</div>
+		
+		<header>
+			<div class="mainLogo">Domino Blog</div>
+		</header>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid" style="margin-left:20px; margin-right:20px">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pasek_zwinięty">
+					<span class="sr-only">Przełączanie paska</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					
+					<p class="navbar-text">
+						<span style="color: grey; font-weight: bold;">Domino Blog</span>
+					</p>
+				</div>
+				<div class="collapse navbar-collapse" id="pasek_zwinięty">
+					<div id="test">
+						<div><a href="#">Strona główna</a></div>
+						<div><a href="#">Programowanie</a></div>
+						<div><a href="#">Techno</a></div>
+					</div>
+					<form class="navbar-form navbar-right" role="search" style="margin-top: 15px;">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Szukaj">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right" style="margin-top:7px;">
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+   
+     
+           
+    <div class="post">
+        <div class="row">
+            <div id="left-menu" class="col-md-3 jumbotron">
+                <ul class="list-group"></ul>
+            </div>
+            <div class="col-md-8">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#detail" role="tab">Podgląd</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Nowy</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="detail" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header">
+                                Dane szczegółowe
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane col-md-6" id="profile" role="tabpanel">
+                        <div class="input-group form-group">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Miasto
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Wrocław</a>
+                                    <a class="dropdown-item" href="#">Kraków</a>
+                                    <a class="dropdown-item" href="#">Amsterdam</a>
+                                </div>
+                            </div>
+                            <input class="form-control" name="city" type="text" disabled />
+                        </div>
+                        <div class="input-group form-group justify-left">
+                            <span class="input-group-addon text-left">Imię</span>
+                            <input class="form-control col-md-6" name="firstname">
+                            <div class="form-control-feedback col-md-3"></div>
+                        </div>
+
+                        <div class="input-group form-group text-left">
+                            <span class="input-group-addon text-left">Nazwisko</span>
+                            <span class="input-group-addon">
+                                <input type="checkbox" data-content="Odznacz jeżeli nieznana" name="lastname"
+                                       title="Cena?" id="checkbox-price">
+                            </span>
+                            <input class="form-control col-md-6" name="price">
+                        </div>
+                        <div class="btn btn-primary col-md-6" data-toggle="modal" data-target="#modal">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Zapisz
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">TYTUŁ</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Na pewno chcesz zapisać?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Anuluj</button>
+                        <button type="button" id="saveButton" class="btn">Potwierdzam</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
+
+
+    <script type="text/javascript" src="scripts/tether.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</body>
+
+
+
+
+

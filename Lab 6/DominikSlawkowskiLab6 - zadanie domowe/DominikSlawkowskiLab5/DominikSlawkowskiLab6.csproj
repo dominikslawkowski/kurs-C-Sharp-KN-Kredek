@@ -87,19 +87,21 @@
     <Content Include="scripts\jquery-3.2.1.min.js" />
     <Content Include="scripts\script.js" />
     <Content Include="scripts\tether.min.js" />
+    <Content Include="styles\css\bootstrap-grid.min.css" />
+    <Content Include="styles\css\bootstrap.css" />
     <Content Include="styles\css\bootstrap.min.css" />
     <Content Include="styles\css\style.css" />
     <Content Include="styles\css\font-awesome.min.css" />
     <Content Include="styles\fonts\fontawesome-webfont.svg" />
-    <Content Include="view\main.html" />
+    <Content Include="main.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\PostController.cs" />
-    <Compile Include="Dtos\PostDto.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Dtos\StudentDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -114,6 +116,7 @@
     <Content Include="styles\fonts\fontawesome-webfont.woff" />
     <Content Include="styles\fonts\fontawesome-webfont.woff2" />
     <Content Include="styles\fonts\FontAwesome.otf" />
+    <Content Include="styles\css\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

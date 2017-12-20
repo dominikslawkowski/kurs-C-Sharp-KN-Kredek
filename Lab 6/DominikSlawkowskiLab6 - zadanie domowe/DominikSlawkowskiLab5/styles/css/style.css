@@ -135,12 +135,35 @@ body
 	box-shadow: 0 0 20px white;
 }
 
+#test
+{
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+#test > div
+{
+float: left;
+margin: 20px;
+color: grey; 
+font-weight: bold;
+
+}
+
+#test > div > a 
+{
+
+text-decoration: none;
+
+}
+
 .post
 {
 	margin-top: 5%;
 	margin-left: 20%; 
-	margin-right: 20%;
-	height: 200px;
+	margin-right: 20%;	
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
 }
