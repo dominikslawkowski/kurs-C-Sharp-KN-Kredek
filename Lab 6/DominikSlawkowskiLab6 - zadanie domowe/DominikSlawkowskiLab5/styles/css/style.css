@@ -135,7 +135,7 @@ body
 	box-shadow: 0 0 20px white;
 }
 
-#test
+#menu
 {
     width: 400px;
     float: left;
@@ -143,7 +143,16 @@ body
     margin-right: 0px;
 }
 
-#test > div
+ul.list-group > li 
+{
+    margin-bottom: 20px;
+    border-radius: 10px !important;
+    background-color: #273d5e;
+    color: #9c9c9c;
+    
+}
+
+#menu > div
 {
 float: left;
 margin: 20px;
@@ -152,18 +161,31 @@ font-weight: bold;
 
 }
 
-#test > div > a 
+#menu > div > a 
 {
 
 text-decoration: none;
 
 }
 
-.post
+.posts
 {
 	margin-top: 5%;
-	margin-left: 20%; 
-	margin-right: 20%;	
+	margin-left: 5%; 
+	margin-right: 5%;	
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
+    float: left;
+}
+
+.post
+{
+    padding: 20px;
+	margin-top: 5%;
+	margin-left: 20%; 
+	margin-right: 20%;
+    margin-bottom: 20%;	
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+
 }

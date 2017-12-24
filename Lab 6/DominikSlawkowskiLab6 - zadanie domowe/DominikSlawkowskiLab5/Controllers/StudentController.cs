@@ -21,9 +21,23 @@ namespace DominikSlawkowskiLab5.Controllers
         {
             _students = new List<StudentDto>
             {
-                new StudentDto { Id=1, FirstName="Dominik",     LastName="Sławkowski",  City="Zielona Góra"},
-                new StudentDto { Id=2, FirstName="Wojtek",      LastName="Dunaj",       City="Zielona Góra"},
-                new StudentDto { Id=3, FirstName="Mateusz",     LastName="Witkowski",   City="Zielona Góra"}
+                new StudentDto {
+                    Id =1,
+                    FirstName ="New Len Faki's Album is awesome",
+                    LastName ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ex sed elementum pretium. Suspendisse pellentesque eget libero non bibendum. Phasellus nec porta libero. Vivamus pellentesque feugiat ultricies. Donec pharetra lacus laoreet ante pulvinar viverra. Nullam eu mollis turpis. Nam eu nulla vel odio vulputate euismod id ullamcorper lectus. Aliquam mollis nulla tortor, at bibendum nunc elementum id. Pellentesque id porttitor massa. Sed sit amet varius lectus, sed gravida nisi. Mauris purus purus, sodales id nisi vitae, placerat pretium est. Duis blandit sodales arcu, vel accumsan dui rutrum eu. Ut suscipit nisl id lorem cursus sollicitudin fringilla ut lectus. Praesent eget dictum dui.",
+                    City ="Zielona Góra"},
+
+                new StudentDto {
+                    Id =2,
+                    FirstName ="Chris Liebing plays live in Berghain!",
+                    LastName ="Vestibulum blandit molestie enim ut vestibulum. Ut quis consequat diam. Nam sollicitudin placerat pharetra. Curabitur varius venenatis porta. In hac habitasse platea dictumst. Pellentesque dignissim vulputate erat in posuere. Curabitur id iaculis ligula, vitae interdum tortor. Praesent vel erat ut tortor egestas venenatis. Aenean vitae metus porta, sollicitudin massa porttitor, malesuada turpis. Nam sollicitudin dui elit, ac tempus ante blandit sollicitudin. Integer tristique risus eget lobortis consequat. Pellentesque nulla dolor, viverra quis tortor eget, mattis commodo tortor. In hac habitasse platea dictumst. Phasellus mollis eget augue quis tristique. Nulla quis tincidunt eros, tempor lacinia nisl.",
+                    City ="Zielona Góra"},
+
+                new StudentDto {
+                    Id =3,
+                    FirstName ="My best trance Djs",
+                    LastName ="Nulla sit amet sapien id est semper fermentum. Maecenas accumsan odio eu eros sollicitudin congue. Phasellus in semper ex, in consequat dolor. Ut vel cursus sem, ac commodo nunc. Duis et enim pretium, cursus tellus ut, ornare tellus. Fusce gravida nisi lacus, at semper lectus euismod ut. Aliquam tempus ultricies mauris eu tincidunt. Suspendisse finibus erat ut gravida consectetur. Nulla massa nisi, gravida vitae lorem sed, faucibus fermentum tellus. Praesent tempor vulputate elementum. Nam in eleifend sem. Sed ac rutrum mi, vel convallis massa. Proin et euismod nunc. Cras convallis in elit sed eleifend. Fusce sollicitudin tellus eu nisi vestibulum mattis.",
+                    City ="Zielona Góra"}
             };
         }
      

@@ -88,7 +88,7 @@
 					</p>
 				</div>
 				<div class="collapse navbar-collapse" id="pasek_zwinięty">
-					<div id="test">
+					<div id="menu">
 						<div><a href="#">Strona główna</a></div>
 						<div><a href="#">Programowanie</a></div>
 						<div><a href="#">Techno</a></div>
@@ -105,15 +105,20 @@
 			</div>
 		</nav>
 
-   
-     
+  
            
+    <div class="posts" style="width: 200px;">
+        <div class="row" style="height: 250px;">
+            <div id="left-menu" style="margin-right:auto !important ;margin-left: auto !important; margin-top:20px !important; height: 300px; width: 600px !important; padding: 15px; float: left;">
+                <div style="clear:both;"></div>
+                <ul class="list-group" style="text-align:center; width: 135px; margin-left: 17%;"></ul>
+            </div>
+        </div>
+    </div>
+
     <div class="post">
         <div class="row">
-            <div id="left-menu" class="col-md-3 jumbotron">
-                <ul class="list-group"></ul>
-            </div>
-            <div class="col-md-8">
+            <div class="col-md" style="background-color: #808080;">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="tab" href="#detail" role="tab">Podgląd</a>
@@ -135,33 +140,18 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane col-md-6" id="profile" role="tabpanel">
-                        <div class="input-group form-group">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Miasto
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Wrocław</a>
-                                    <a class="dropdown-item" href="#">Kraków</a>
-                                    <a class="dropdown-item" href="#">Amsterdam</a>
-                                </div>
-                            </div>
-                            <input class="form-control" name="city" type="text" disabled />
-                        </div>
+                    <div class="tab-pane col-md-6" id="profile" role="tabpanel" style="margin-top: 20px; margin-bottom: 20px;">
+                        
                         <div class="input-group form-group justify-left">
-                            <span class="input-group-addon text-left">Imię</span>
+                            <span class="input-group-addon text-left">Tytuł</span>
                             <input class="form-control col-md-6" name="firstname">
                             <div class="form-control-feedback col-md-3"></div>
                         </div>
 
                         <div class="input-group form-group text-left">
-                            <span class="input-group-addon text-left">Nazwisko</span>
-                            <span class="input-group-addon">
-                                <input type="checkbox" data-content="Odznacz jeżeli nieznana" name="lastname"
-                                       title="Cena?" id="checkbox-price">
-                            </span>
-                            <input class="form-control col-md-6" name="price">
+                            <span class="input-group-addon text-left">Treść</span>
+                            
+                            <input class="form-control" style="height: 100px; width:750px;">
                         </div>
                         <div class="btn btn-primary col-md-6" data-toggle="modal" data-target="#modal">
                             <i class="fa fa-plus" aria-hidden="true"></i>
@@ -171,22 +161,18 @@
                 </div>
             </div>
         </div>
+    </div>
+   
 
 
         <div class="modal fade" id="modal">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog" role="document" style="background-color: #393939; border-radius: 15px; color: black; border:groove;">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">TYTUŁ</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </div>
                     <div class="modal-body">
-                        Na pewno chcesz zapisać?
+                        Post został dodany! :)
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Anuluj</button>
                         <button type="button" id="saveButton" class="btn">Potwierdzam</button>
                     </div>
                 </div>
@@ -195,7 +181,6 @@
 
     </div>
  
-
 
     <script type="text/javascript" src="scripts/tether.min.js"></script>
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>

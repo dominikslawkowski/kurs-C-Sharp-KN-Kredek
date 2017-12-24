@@ -10,7 +10,7 @@ function renderMenuLeft(items) {
         var li = document.createElement('li');
         li.id = items[i].Id;
         li.className = 'list-group-item';
-        li.textContent = items[i].FirstName
+        li.textContent = items[i].Id + " post";
 
         // Bind click event to li element
         li.onclick = function () {
@@ -37,9 +37,8 @@ function renderDetail(item) {
     var ul = document.querySelector('#detail ul');
     var ulTextContent = '';
     // For each key-value pair in object create new li
-    for (var key in item) {
-        ulTextContent += '<li>' + key + ': ' + item[key] + '</li>';
-    }
+    ulTextContent = item.LastName;
+
     //Replace old values with new properties
     ul.innerHTML = ulTextContent;
     currentStudent = item;
@@ -68,8 +67,6 @@ $(document).ready(function () {
         students = response;
         renderMenuLeft(students);
         renderDetail(students[1]);
-        //remove spinner when request done
-        $('.loading').removeClass('loader');
 
     });
     $('#saveButton').click(function () {
@@ -78,7 +75,6 @@ $(document).ready(function () {
         var newStudent = {
             FirstName: $('input[name = "firstname"]').val(),
             LastName: $('input[name = "lastname"]').val(),
-            City: $('input[name = "city"]').val()
         };
 
         var requestPOST = $.ajax({
@@ -99,7 +95,7 @@ $(document).ready(function () {
 
 
 
-
+//funkcja dodająca i usuwajaca odpowiednie klasy w trakcie trwania preloadera
 var preloaderEl = document.querySelector('.preloader');
 setTimeout(function () {
 
