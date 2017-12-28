@@ -1,0 +1,10 @@
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\bin\Debug\DominikSlawkowskiLab7.exe.config
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\bin\Debug\DominikSlawkowskiLab7.exe
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\bin\Debug\DominikSlawkowskiLab7.pdb
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.csprojResolveAssemblyReference.cache
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.FormMain.resources
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.Properties.Resources.resources
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.csproj.GenerateResource.Cache
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.exe
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.pdb
+C:\Users\domin\Desktop\C#\3 semestr\DominikSlawkowskiLab7 - zad dom\DominikSlawkowskiLab7\DominikSlawkowskiLab7\obj\Debug\DominikSlawkowskiLab7.FormGame.resources
