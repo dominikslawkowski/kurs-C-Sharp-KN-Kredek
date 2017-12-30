@@ -42,11 +42,12 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.BackColor = System.Drawing.Color.Black;
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelTitle.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelTitle.ForeColor = System.Drawing.Color.Aqua;
-            this.labelTitle.Location = new System.Drawing.Point(92, 42);
+            this.labelTitle.Location = new System.Drawing.Point(84, 30);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(333, 39);
+            this.labelTitle.Size = new System.Drawing.Size(359, 42);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "SPACE INVADERS";
             // 

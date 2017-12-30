@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGame));
             this.panelShip = new System.Windows.Forms.Panel();
             this.panelEnemy1 = new System.Windows.Forms.Panel();
             this.panelEnemy4 = new System.Windows.Forms.Panel();
             this.panelEnemy3 = new System.Windows.Forms.Panel();
             this.panelEnemy2 = new System.Windows.Forms.Panel();
+            this.timerLasers = new System.Windows.Forms.Timer(this.components);
+            this.timerAliens = new System.Windows.Forms.Timer(this.components);
+            this.timerRandomisation = new System.Windows.Forms.Timer(this.components);
+            this.timerAlienLasers = new System.Windows.Forms.Timer(this.components);
+            this.timerAlienShoot = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // panelShip
@@ -76,6 +82,29 @@
             this.panelEnemy2.Size = new System.Drawing.Size(51, 49);
             this.panelEnemy2.TabIndex = 2;
             // 
+            // timerLasers
+            // 
+            this.timerLasers.Interval = 1;
+            this.timerLasers.Tick += new System.EventHandler(this.timerLasers_Tick);
+            // 
+            // timerAliens
+            // 
+            this.timerAliens.Tick += new System.EventHandler(this.timerAliens_Tick);
+            // 
+            // timerRandomisation
+            // 
+            this.timerRandomisation.Tick += new System.EventHandler(this.timerRandomisation_Tick);
+            // 
+            // timerAlienLasers
+            // 
+            this.timerAlienLasers.Interval = 1;
+            this.timerAlienLasers.Tick += new System.EventHandler(this.timerAlienLasers_Tick);
+            // 
+            // timerAlienShoot
+            // 
+            this.timerAlienShoot.Interval = 2000;
+            this.timerAlienShoot.Tick += new System.EventHandler(this.timerAlienShoot_Tick);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +120,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SPACE INVADERS";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormGame_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormGame_KeyPress);
             this.ResumeLayout(false);
 
         }
@@ -102,5 +132,10 @@
         private System.Windows.Forms.Panel panelEnemy4;
         private System.Windows.Forms.Panel panelEnemy3;
         private System.Windows.Forms.Panel panelEnemy2;
+        private System.Windows.Forms.Timer timerLasers;
+        private System.Windows.Forms.Timer timerAliens;
+        private System.Windows.Forms.Timer timerRandomisation;
+        private System.Windows.Forms.Timer timerAlienLasers;
+        private System.Windows.Forms.Timer timerAlienShoot;
     }
 }
