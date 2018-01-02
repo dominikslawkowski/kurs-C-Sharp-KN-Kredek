@@ -77,6 +77,7 @@
             this.buttonScores.TabIndex = 2;
             this.buttonScores.Text = "SCORES";
             this.buttonScores.UseVisualStyleBackColor = false;
+            this.buttonScores.Click += new System.EventHandler(this.buttonScores_Click);
             // 
             // buttonExit
             // 
@@ -134,6 +135,7 @@
             this.Controls.Add(this.buttonScores);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.labelTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SPACE INVADERS";

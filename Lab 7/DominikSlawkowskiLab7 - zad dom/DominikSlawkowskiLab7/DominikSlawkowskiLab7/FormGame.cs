@@ -15,10 +15,13 @@ namespace DominikSlawkowskiLab7
         List<Panel> lasersList = new List<Panel>();
         List<Panel> aliensList = new List<Panel>();
         List<Panel> alienLasersList = new List<Panel>();
+        List<Object> endPanelList = new List<object>();
 
         List<int> randList = new List<int>();
         Random value = new Random();
         int i = 0;
+
+        int score = 0;
 
         Panel laser;
         Panel alienLaser;
@@ -32,9 +35,26 @@ namespace DominikSlawkowskiLab7
             aliensList.Add(panelEnemy3);
             aliensList.Add(panelEnemy4);
 
+            endPanelList.Add(panelEndBackground);
+            endPanelList.Add(labelTitle);
+            endPanelList.Add(labelScore);
+            endPanelList.Add(buttonStart);
+            endPanelList.Add(buttonMenu);
+
+            panelEndBackground.Visible = false;
+            labelTitle.Visible = false;
+            labelScore.Visible = false;
+            buttonStart.Visible = false;
+            buttonMenu.Visible = false;
+
+            foreach (Object obj in endPanelList)
+            {
+                //obj.GetType();
+            }
+
             randList.Add(0);
             //schowanie kursora
-            // Cursor.Hide();
+            //Cursor.Hide();
 
             AlienShoot();
 
@@ -78,7 +98,7 @@ namespace DominikSlawkowskiLab7
             lasersList.Add(laser);
 
             Controls.Add(laser);
-            laser.SetBounds(panelShip.Left + 37, panelShip.Top - 40, 5, 20);
+            laser.SetBounds(panelShip.Left + 37, panelShip.Top, 5, 20);
 
             laser.BackColor = Color.BlueViolet;
             laser.Visible = true;
@@ -96,7 +116,7 @@ namespace DominikSlawkowskiLab7
                     alienLasersList.Add(alienLaser);
 
                     Controls.Add(alienLaser);
-                    alienLaser.SetBounds(alien.Left + 20, alien.Bottom + 10, 5, 20);
+                    alienLaser.SetBounds(alien.Left + 20, alien.Bottom, 5, 20);
 
                     alienLaser.BackColor = Color.Coral;
                     alienLaser.Visible = true;  
@@ -119,9 +139,11 @@ namespace DominikSlawkowskiLab7
                 {
                     if(laser.Top <= alien.Bottom && laser.Bottom >= alien.Top && laser.Right <= alien.Right && laser.Left >= alien.Left)
                     {
-                        alien.SetBounds(Width,Height,0,0);
+                        alien.SetBounds(Width, Height, 0, 0);
                         alien.Dispose();
                         laser.Dispose();
+
+                        score++;
                     }
                 }
                 
@@ -139,7 +161,21 @@ namespace DominikSlawkowskiLab7
                     {
                         panelShip.Dispose();
                         alienLaser.Dispose();
-                    }
+
+                        labelScore.Text += score.ToString();
+
+                        timerAlienLasers.Stop();
+                        timerAliens.Stop();
+                        timerAlienShoot.Stop();
+                        timerLasers.Stop();
+                        timerRandomisation.Stop();
+
+                        panelEndBackground.Visible = true;
+                        labelTitle.Visible = true;
+                        labelScore.Visible = true;
+                        buttonStart.Visible = true;
+                        buttonMenu.Visible = true;
+                }
 
 
             }
@@ -152,7 +188,7 @@ namespace DominikSlawkowskiLab7
             {
                 if(alien.Top <= 200)
                 alien.Top += 1;
-                    
+           
             }
 
         }
@@ -166,6 +202,18 @@ namespace DominikSlawkowskiLab7
         private void timerAlienShoot_Tick(object sender, EventArgs e)
         {
             AlienShoot();
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormGame game = new FormGame();
+            game.Show();
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -32,5 +32,10 @@ namespace DominikSlawkowskiLab7
             FormGame game = new FormGame();
             game.Show();
         }
+
+        private void buttonScores_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.Red;
+        }
     }
 }
