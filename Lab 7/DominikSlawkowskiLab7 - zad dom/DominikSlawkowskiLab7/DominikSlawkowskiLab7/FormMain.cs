@@ -27,12 +27,22 @@ namespace DominikSlawkowskiLab7
             Close();
         }
 
+        /// <summary>
+        /// Utworzenie okna z nową grą
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonStart_Click(object sender, EventArgs e)
         {
             FormGame game = new FormGame();
             game.Show();
         }
 
+        /// <summary>
+        /// Zmiana koloru tła
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonScores_Click(object sender, EventArgs e)
         {
             BackColor = Color.Red;

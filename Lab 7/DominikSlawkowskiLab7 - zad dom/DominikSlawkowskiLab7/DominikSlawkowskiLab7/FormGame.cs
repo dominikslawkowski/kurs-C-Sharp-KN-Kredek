@@ -12,6 +12,7 @@ namespace DominikSlawkowskiLab7
 {
     public partial class FormGame : Form
     {
+        //inicjalizowanie potrzebnych zmiennych, list i obiektów
         List<Panel> lasersList = new List<Panel>();
         List<Panel> aliensList = new List<Panel>();
         List<Panel> alienLasersList = new List<Panel>();
@@ -47,14 +48,9 @@ namespace DominikSlawkowskiLab7
             buttonStart.Visible = false;
             buttonMenu.Visible = false;
 
-            foreach (Object obj in endPanelList)
-            {
-                //obj.GetType();
-            }
+
 
             randList.Add(0);
-            //schowanie kursora
-            //Cursor.Hide();
 
             AlienShoot();
 
@@ -65,6 +61,11 @@ namespace DominikSlawkowskiLab7
             timerAlienShoot.Start();
         }
 
+        /// <summary>
+        /// Poruszanie statkiem na boki przy pomocy strzałek
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormGame_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Left)
@@ -79,6 +80,11 @@ namespace DominikSlawkowskiLab7
 
         }
 
+        /// <summary>
+        /// Strzelanie ze statku przy pomocy spacji
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormGame_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 32)
@@ -92,6 +98,9 @@ namespace DominikSlawkowskiLab7
             }
         }
 
+        /// <summary>
+        /// Funkcja oddawania strzału z naszego statku
+        /// </summary>
         private void Shoot()
         {
             laser = new Panel();
@@ -106,6 +115,9 @@ namespace DominikSlawkowskiLab7
             timerLasers.Start();
         }
 
+        /// <summary>
+        /// Funkcja strzelania do nas z wrogich statków
+        /// </summary>
         private void AlienShoot()
         {
 
@@ -128,6 +140,11 @@ namespace DominikSlawkowskiLab7
             timerAlienLasers.Start();
         }
 
+        /// <summary>
+        /// Timer odpowiedzialny za przemieszczanie naszych pocisków
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerLasers_Tick(object sender, EventArgs e)
         {
             foreach (Panel laser in lasersList)
@@ -150,6 +167,11 @@ namespace DominikSlawkowskiLab7
             }
         }
 
+        /// <summary>
+        /// Timer odpowiedzialny za przemieszczanie wrogich pocisków
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerAlienLasers_Tick(object sender, EventArgs e)
         {
             foreach (Panel alienLaser in alienLasersList)
@@ -181,6 +203,11 @@ namespace DominikSlawkowskiLab7
             }
         }
 
+        /// <summary>
+        /// Timer odpowiedzialny za przemieszczanie się wrogich statków
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerAliens_Tick(object sender, EventArgs e)
         {
 
@@ -193,17 +220,32 @@ namespace DominikSlawkowskiLab7
 
         }
 
+        /// <summary>
+        /// Timer dodający losowe wartości do listy
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerRandomisation_Tick(object sender, EventArgs e)
         {
             randList.Add(value.Next(1, 10));
             i++;
         }
 
+        /// <summary>
+        /// Timer odpowiedzialny za oddawanie strzałów przez wrogie statki
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerAlienShoot_Tick(object sender, EventArgs e)
         {
             AlienShoot();
         }
 
+        /// <summary>
+        /// Funkcja restartu gry
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonStart_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -211,6 +253,11 @@ namespace DominikSlawkowskiLab7
             game.Show();
         }
 
+        /// <summary>
+        /// Funkcja zakończenia danej gry
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonMenu_Click(object sender, EventArgs e)
         {
             this.Close();
