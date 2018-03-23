@@ -69,6 +69,12 @@ $(document).ready(function () {
         renderDetail(students[1]);
 
     });
+
+    $('#test').click(function () {
+        console.log("dominik");
+        $('#modal').modal('close');
+    });
+
     $('#saveButton').click(function () {
         $('#modal').modal('close');
         // Creating new student collecting values from form
